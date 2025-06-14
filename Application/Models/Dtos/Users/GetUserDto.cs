@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Models.Dtos.Ledgers;
 
 namespace Application.Models.Dtos.Users
 {
-    internal class GetUserDto
+    public class GetUserDto
     {
+        public string Username { get; set; } = null!;
+        public decimal Balance { get; set; }
+        public DateTime CreatedAt { get; set; }
+
+        public List<GetLedgerDto> Ledgers { get; set; } = new List<GetLedgerDto>();
     }
 }

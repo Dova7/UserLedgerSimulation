@@ -12,5 +12,6 @@ namespace UserLedgerSimulation.MiddleWare
             options.ReturnHttpNotAcceptable = true;
             options.Filters.Add(new ProducesAttribute("application/json", "text/plain"));
         });
+        public static void AddAutoMapper(this WebApplicationBuilder builder) => builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
     }
 }

@@ -12,7 +12,11 @@
 
   <ItemGroup>
     <Folder Include="Contracts\IServices\" />
-    <Folder Include="Models\Dtos\Ledgers\" />
+    <Folder Include="Services\Implementations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
   </ItemGroup>
 
 </Project>
